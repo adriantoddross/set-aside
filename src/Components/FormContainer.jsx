@@ -32,7 +32,6 @@ export default class FormContainer extends Component {
       this.setState({
         grossIncome: 0,
         tax: 0,
-        taxWithheld: 0
       })
     }
     handleIncome(e) {
