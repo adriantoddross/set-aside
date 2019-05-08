@@ -10,9 +10,7 @@ export default class FormContainer extends Component {
         this.state = {
             grossIncome: 0,
             tax: 0,
-            taxOptions: [35,40],
-            netIncome: 0,
-            taxWithheld: 0
+            taxOptions: [35,40]
         }
 
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
