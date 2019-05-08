@@ -9,6 +9,7 @@ export default class FormContainer extends Component {
         super(props);
         this.state = {
             grossIncome: 0,
+            tax: 0,
             netIncome: 0,
             taxWithheld: 0
         }
@@ -16,6 +17,7 @@ export default class FormContainer extends Component {
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
         this.handleClearForm = this.handleClearForm.bind(this)
         this.handleIncome = this.handleIncome.bind(this)
+        this.handleTax = this.handleTax.bind(this)
     }
   
     /* This life cycle hook gets executed when the component mounts */
@@ -29,6 +31,10 @@ export default class FormContainer extends Component {
     handleIncome(e) {
         // Update the state with income
     }
+    handleTax(e) {
+        // Update the state with tax percentage
+    }
+
     render() {
         const gross = this.state.grossIncome;
         const net = this.state.netIncome;
@@ -39,12 +45,19 @@ export default class FormContainer extends Component {
           <Input 
             type= "number"
             title= "Gross Income"
-            name= "grosspay"
+            name= "gross"
             value= {this.state.grossIncome}
             placeholder= "Enter your gross income"
             handleChange= {this.handleIncome}
           />  {/* Gross income */}
-          <Select /> {/* Percentage to withhold */} 
+          <Select 
+            title= "Amount to Withhold"
+            name= "tax"
+            options= {[35, 40]}
+            value= {this.state.tax}
+            placeholder= "Percentage to set aside"
+            handleChange={this.handleTax}
+          /> {/* Percentage to withhold */} 
           <Button /> { /*Clear form */ }
           <Button /> { /*Submit */ }
         </form>
