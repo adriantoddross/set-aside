@@ -25,8 +25,14 @@ export default class FormContainer extends Component {
     handleFormSubmit() {
       // Form submission logic
     }
-    handleClearForm() {
-      // Logic for resetting the form
+    handleClearForm(e) {
+      e.preventDefault();
+      this.setState({
+        grossIncome: 0,
+        tax: 0,
+        netIncome: 0,
+        taxWithheld: 0
+      })
     }
     handleIncome(e) {
         // Update the state with income
