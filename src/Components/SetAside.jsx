@@ -8,16 +8,20 @@ export default class SetAside extends React.Component() {
     constructor(props) {
         super(props);
         this.state = {
-            grossincome: 0,
-            netincome: 0,
-            taxwithheld: 0
+            grossIncome: 0,
+            netIncome: 0,
+            taxWithheld: 0
         }
     }
 
     render() {
-        return(
-            <div>
+         
+        const gross = this.state.grossIncome;
+        const net = this.state.netIncome;
+        const taxes = this.state.taxWithheld;
 
+        return ( 
+            <div className='App'>
             </div>
         );
     }
