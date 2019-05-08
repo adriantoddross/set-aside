@@ -58,8 +58,14 @@ export default class FormContainer extends Component {
             placeholder= "Percentage to set aside"
             handleChange={this.handleTax}
           /> {/* Percentage to withhold */} 
-          <Button /> { /*Clear form */ }
-          <Button /> { /*Submit */ }
+          <Button 
+            title="Clear form"
+            action={this.handleClearForm}
+          /> { /*Clear form */ }
+          <Button 
+            title="Submit"
+            action={this.handleFormSubmit}
+          /> { /*Submit form*/ }
         </form>
       );
     }
