@@ -35,7 +35,10 @@ export default class FormContainer extends Component {
       })
     }
     handleIncome(e) {
-        // Update the state with income
+        e.preventDefault();
+
+        const income = e.target.value;
+        this.setState({grossIncome: income})
     }
     handleTax(e) {
         // Update the state with tax percentage
