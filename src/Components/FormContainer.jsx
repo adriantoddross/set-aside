@@ -36,7 +36,7 @@ export default class FormContainer extends Component {
     }
 
     render() {
-        const gross = this.state.grossIncome;
+        const grosspay = this.state.grossIncome;
         const net = this.state.netIncome;
         const taxes = this.state.taxWithheld;
 
@@ -46,7 +46,7 @@ export default class FormContainer extends Component {
             type= "number"
             title= "Gross Income"
             name= "gross"
-            value= {this.state.grossIncome}
+            value= {grosspay}
             placeholder= "Enter your gross income"
             handleChange= {this.handleIncome}
           />  {/* Gross income */}
@@ -54,7 +54,7 @@ export default class FormContainer extends Component {
             title= "Amount to Withhold"
             name= "tax"
             options= {[35, 40]}
-            value= {this.state.tax}
+            value= {taxes}
             placeholder= "Percentage to set aside"
             handleChange={this.handleTax}
           /> {/* Percentage to withhold */} 
