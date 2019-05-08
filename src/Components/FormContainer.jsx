@@ -48,7 +48,6 @@ export default class FormContainer extends Component {
 
     render() {
         const grosspay = this.state.grossIncome;
-        const net = this.state.netIncome;
         const taxes = this.state.taxWithheld;
         const taxOptions = this.state.taxOptions;
 
