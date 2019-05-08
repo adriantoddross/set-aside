@@ -12,6 +12,10 @@ export default class FormContainer extends Component {
             netIncome: 0,
             taxWithheld: 0
         }
+
+        this.handleFormSubmit = this.handleFormSubmit.bind(this)
+        this.handleClearForm = this.handleClearForm.bind(this)
+        this.handleIncome = this.handleIncome.bind(this)
     }
   
     /* This life cycle hook gets executed when the component mounts */
@@ -21,6 +25,9 @@ export default class FormContainer extends Component {
     }
     handleClearForm() {
       // Logic for resetting the form
+    }
+    handleIncome(e) {
+        // Update the state with income
     }
     render() {
         const gross = this.state.grossIncome;
