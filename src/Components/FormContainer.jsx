@@ -21,8 +21,11 @@ export default class FormContainer extends Component {
   
     /* This life cycle hook gets executed when the component mounts */
   
-    handleFormSubmit() {
-      // Form submission logic
+    handleFormSubmit(e) {
+      e.preventDefault();
+      let userData = this.state;
+
+      console.log(userData);
     }
     handleClearForm(e) {
       e.preventDefault();
