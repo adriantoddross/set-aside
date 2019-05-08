@@ -29,7 +29,14 @@ export default class FormContainer extends Component {
 
       return (
         <form className="container" onSubmit={this.handleFormSubmit}>
-          <Input />  {/* Gross income */}
+          <Input 
+            type= "number"
+            title= "Gross Income"
+            name= "grosspay"
+            value= {this.state.grossIncome}
+            placeholder= "Enter your gross income"
+            handleChange= {this.handleIncome}
+          />  {/* Gross income */}
           <Select /> {/* Percentage to withhold */} 
           <Button /> { /*Clear form */ }
           <Button /> { /*Submit */ }
