@@ -6,25 +6,12 @@ import Input from './Input';
 
 export default class FormContainer extends Component {  
     constructor(props) {
-      super(props);
-  
-      this.state = {
-        newUser: {
-          name: '',
-          email: '',
-          age: '',
-          gender: '',
-          expertise: '',
-          about: ''
-  
-        },
-  
-        genderOptions: ['Male', 'Female', 'Others'],
-        skillOptions: ['Programming', 'Development', 'Design', 'Testing']
-  
-      }
-      this.handleFormSubmit = this.handleFormSubmit.bind(this);
-      this.handleClearForm = this.handleClearForm.bind(this);
+        super(props);
+        this.state = {
+            grossIncome: 0,
+            netIncome: 0,
+            taxWithheld: 0
+        }
     }
   
     /* This life cycle hook gets executed when the component mounts */
@@ -36,16 +23,16 @@ export default class FormContainer extends Component {
       // Logic for resetting the form
     }
     render() {
+        const gross = this.state.grossIncome;
+        const net = this.state.netIncome;
+        const taxes = this.state.taxWithheld;
+
       return (
         <form className="container" onSubmit={this.handleFormSubmit}>
-  
-          <Input /> {/* Name of the user */}
-          <Input /> {/* Input for Age */} 
-          <Select /> {/* Gender Selection */}
-          <CheckBox /> {/* List of Skills (eg. Programmer, developer) */}
-          <TextArea /> {/* About you */}
+          <Input />  {/* Gross income */}
+          <Select /> {/* Percentage to withhold */} 
+          <Button /> { /*Clear form */ }
           <Button /> { /*Submit */ }
-          <Button /> {/* Clear the form */}
         </form>
       );
     }
