@@ -10,6 +10,7 @@ export default class FormContainer extends Component {
         this.state = {
             grossIncome: 0,
             tax: 0,
+            taxOptions: [35,40],
             netIncome: 0,
             taxWithheld: 0
         }
@@ -48,6 +49,7 @@ export default class FormContainer extends Component {
         const grosspay = this.state.grossIncome;
         const net = this.state.netIncome;
         const taxes = this.state.taxWithheld;
+        const taxOptions = this.state.taxOptions;
 
       return (
         <form className="container" onSubmit={this.handleFormSubmit}>
@@ -62,7 +64,7 @@ export default class FormContainer extends Component {
           <Select 
             title= "Amount to Withhold"
             name= "tax"
-            options= {[35, 40]}
+            options= {taxOptions}
             value= {taxes}
             placeholder= "Percentage to set aside"
             handleChange={this.handleTax}
