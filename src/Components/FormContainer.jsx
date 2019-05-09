@@ -51,7 +51,6 @@ export default class FormContainer extends Component {
         const grosspay = this.state.grossIncome;
         const taxes = this.state.tax;
         const taxOptions = this.state.taxOptions;
-        const isFormValid = this.state.formValid;
 
       return (
         <form className="container" onSubmit={this.handleFormSubmit}>
