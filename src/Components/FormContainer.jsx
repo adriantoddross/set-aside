@@ -8,9 +8,9 @@ export default class FormContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            grossIncome: 0,
-            tax: 0,
-            taxOptions: [35,40]
+            grossIncome: "",
+            tax: 40,
+            taxOptions: [40,35]
         }
 
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
@@ -23,8 +23,8 @@ export default class FormContainer extends Component {
   
     handleFormSubmit(e) {
       e.preventDefault();
-      let userData = this.state;
-
+      let userData = Object.assign({}, {grossIncome: this.state.grossIncome, tax: this.state.tax});
+      userData.grossIncome = parseInt(userData.grossIncome, 10);
       console.log(userData);
     }
     handleClearForm(e) {
@@ -49,7 +49,7 @@ export default class FormContainer extends Component {
 
     render() {
         const grosspay = this.state.grossIncome;
-        const taxes = this.state.taxWithheld;
+        const taxes = this.state.tax;
         const taxOptions = this.state.taxOptions;
 
       return (
@@ -66,7 +66,7 @@ export default class FormContainer extends Component {
             title= "Amount to Withhold"
             name= "tax"
             options= {taxOptions}
-            value= {taxes}
+            value={taxes}
             placeholder= "Percentage to set aside"
             handleChange={this.handleTax}
           /> {/* Percentage to withhold */} 
