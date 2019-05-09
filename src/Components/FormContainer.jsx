@@ -30,8 +30,8 @@ export default class FormContainer extends Component {
     handleClearForm(e) {
       e.preventDefault();
       this.setState({
-        grossIncome: 0,
-        tax: 0,
+        grossIncome: "",
+        tax: 40,
       })
     }
     handleIncome(e) {
