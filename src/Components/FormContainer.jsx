@@ -25,6 +25,7 @@ export default class FormContainer extends Component {
       e.preventDefault();
 
       let userData = Object.assign({}, {grossIncome: this.state.grossIncome, tax: this.state.tax});
+      userData.grossIncome = parseInt(userData.grossIncome);
       console.log(userData);
     }
     handleClearForm(e) {
