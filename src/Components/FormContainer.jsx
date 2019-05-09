@@ -54,34 +54,36 @@ export default class FormContainer extends Component {
         const taxOptions = this.state.taxOptions;
 
       return (
-        <form className="container" onSubmit={this.handleFormSubmit}>
-          <Input 
-            type= "number"
-            title= "Gross Income"
-            name= "gross"
-            value= {grosspay}
-            placeholder= "Enter your gross income"
-            handleChange= {this.handleIncome}
-          />  {/* Gross income */}
-          <Select 
-            title= "Amount to Withhold"
-            name= "tax"
-            options= {taxOptions}
-            value={taxes}
-            placeholder= "Percentage to set aside"
-            handleChange={this.handleTax}
-          /> {/* Percentage to withhold */} 
-          <Button 
-            title="Clear form"
-            action={this.handleClearForm}
-            valid="true"
-          /> { /*Clear form */ }
-          <Button 
-            title="Submit"
-            action={this.handleFormSubmit}
-            valid={(grosspay > 0 ? true : false)}
-          /> { /*Submit form*/ }
-        </form>
+        <div>
+          <form className="container" onSubmit={this.handleFormSubmit}>
+            <Input 
+              type= "number"
+              title= "Gross Income"
+              name= "gross"
+              value= {grosspay}
+              placeholder= "Enter your gross income"
+              handleChange= {this.handleIncome}
+            />  {/* Gross income */}
+            <Select 
+              title= "Amount to Withhold"
+              name= "tax"
+              options= {taxOptions}
+              value={taxes}
+              placeholder= "Percentage to set aside"
+              handleChange={this.handleTax}
+            /> {/* Percentage to withhold */} 
+            <Button 
+              title="Clear form"
+              action={this.handleClearForm}
+              valid="true"
+            /> { /*Clear form */ }
+            <Button 
+              title="Submit"
+              action={this.handleFormSubmit}
+              valid={(grosspay > 0 ? true : false)}
+            /> { /*Submit form*/ }
+          </form>
+        </div>
       );
     }
   }
