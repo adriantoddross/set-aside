@@ -10,7 +10,8 @@ export default class FormContainer extends Component {
         this.state = {
             grossIncome: "",
             tax: 40,
-            taxOptions: [40,35]
+            taxOptions: [40,35],
+            error: ""
         }
 
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
@@ -23,8 +24,8 @@ export default class FormContainer extends Component {
   
     handleFormSubmit(e) {
       e.preventDefault();
+
       let userData = Object.assign({}, {grossIncome: this.state.grossIncome, tax: this.state.tax});
-      userData.grossIncome = parseInt(userData.grossIncome, 10);
       console.log(userData);
     }
     handleClearForm(e) {
@@ -37,7 +38,7 @@ export default class FormContainer extends Component {
     handleIncome(e) {
         e.preventDefault();
 
-        const income = e.target.value;
+        const income = parseInt(e.target.value, 10);
         this.setState({grossIncome: income})
     }
     handleTax(e) {
