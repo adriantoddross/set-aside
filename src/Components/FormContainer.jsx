@@ -8,10 +8,9 @@ export default class FormContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            grossIncome: "",
+            grossIncome: 0,
             tax: 40,
-            taxOptions: [40,35],
-            error: ""
+            taxOptions: [40,35]
         }
 
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
@@ -31,14 +30,14 @@ export default class FormContainer extends Component {
     handleClearForm(e) {
       e.preventDefault();
       this.setState({
-        grossIncome: "",
+        grossIncome: 0,
         tax: 40,
       })
     }
     handleIncome(e) {
         e.preventDefault();
 
-        const income = parseInt(e.target.value, 10);
+        const income = e.target.value;
         this.setState({grossIncome: income})
     }
     handleTax(e) {
@@ -52,6 +51,7 @@ export default class FormContainer extends Component {
         const grosspay = this.state.grossIncome;
         const taxes = this.state.tax;
         const taxOptions = this.state.taxOptions;
+        const isFormValid = this.state.formValid;
 
       return (
         <form className="container" onSubmit={this.handleFormSubmit}>
@@ -74,10 +74,12 @@ export default class FormContainer extends Component {
           <Button 
             title="Clear form"
             action={this.handleClearForm}
+            valid="true"
           /> { /*Clear form */ }
           <Button 
             title="Submit"
             action={this.handleFormSubmit}
+            valid={(grosspay > 0 ? true : false)}
           /> { /*Submit form*/ }
         </form>
       );
