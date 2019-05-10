@@ -27,7 +27,6 @@ export default class FormContainer extends Component {
       e.preventDefault();
 
       let userData = Object.assign({}, {grossIncome: this.state.grossIncome, tax: this.state.tax});
-      userData.grossIncome = parseInt(userData.grossIncome);
       this.props.handleFormData(userData);
     }
     handleClearForm(e) {
@@ -40,13 +39,13 @@ export default class FormContainer extends Component {
     handleIncome(e) {
         e.preventDefault();
 
-        const income = e.target.value;
+        const income = parseInt(e.target.value, 10);
         this.setState({grossIncome: income})
     }
     handleTax(e) {
         e.preventDefault();
 
-        const percentange = e.target.value;
+        const percentange = parseInt(e.target.value, 10);
         this.setState({tax: percentange})
     }
 
