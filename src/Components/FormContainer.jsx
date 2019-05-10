@@ -39,7 +39,7 @@ export default class FormContainer extends Component {
     handleIncome(e) {
         e.preventDefault();
 
-        const income = parseInt(e.target.value, 10);
+        const income = parseInt(e.target.value, 10) || "";
         this.setState({grossIncome: income})
     }
     handleTax(e) {
