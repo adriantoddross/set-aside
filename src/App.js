@@ -1,10 +1,10 @@
 import React from 'react';
-import Form from './Components/FormContainer';
+import SetAsideApp from './Components/SetAside.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Form/>
+      <SetAsideApp/>
     </div>
   );
 }
