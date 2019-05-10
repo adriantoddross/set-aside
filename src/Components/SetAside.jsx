@@ -7,10 +7,10 @@ export default class SetAside extends Component {
     constructor(props) {
         super(props);
 
-        this.grabData = this.grabData.bind(this)
+        this.getFormData = this.getFormData.bind(this)
     };
 
-    grabData(data) {
+    getFormData(data) {
         console.log(data);
     }
 
@@ -20,7 +20,7 @@ export default class SetAside extends Component {
         
         return ( 
             <div className='App'>
-                <Form handleData={this.grabData}/>
+                <Form handleFormData={this.getFormData}/>
                 <IncomeDisplay
                     amount={taxWithheld}
                     description="Amount to withhold"
