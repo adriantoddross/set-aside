@@ -4,6 +4,8 @@ import Select from './Select';
 import Button from './Button';
 import Input from './Input';
 
+// Created by reading through: https://www.codementor.io/blizzerand/building-forms-using-react-everything-you-need-to-know-iz3eyoq4y
+
 export default class FormContainer extends Component {  
     constructor(props) {
         super(props);
@@ -26,7 +28,7 @@ export default class FormContainer extends Component {
 
       let userData = Object.assign({}, {grossIncome: this.state.grossIncome, tax: this.state.tax});
       userData.grossIncome = parseInt(userData.grossIncome);
-      console.log(userData);
+      this.props.handleData(userData);
     }
     handleClearForm(e) {
       e.preventDefault();
