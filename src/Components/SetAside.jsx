@@ -11,7 +11,7 @@ export default class SetAside extends Component {
     };
 
     grabData(data) {
-        return data;
+        console.log(data);
     }
 
     render() {
