@@ -25,8 +25,9 @@ export default class SetAside extends Component {
     }
 
     getFormData(data) {
-        this.setState({...data});
-        this.calculateAmounts(data);
+        this.setState({...data}, () => {
+            this.calculateAmounts(data);
+        });
     }
 
     render() {
