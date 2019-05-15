@@ -44,7 +44,8 @@
   visibility: hidden;
  }
 
- .form-button:hover {
+ .form-button:hover, 
+ .form-button:focus {
   color: #0073b9;
   border-color: currentColor;
   background-color: white;
