@@ -23,7 +23,7 @@
   margin: 2px 0;
 
   /* invisible border (will be colored on hover/focus) */
-  border: solid 1px transparent;
+  border: solid 2px transparent;
   border-radius: 4px;
 
   /* size comes from text & padding (no width/height) */
@@ -42,4 +42,10 @@
 
  .form-button:disabled {
   visibility: hidden;
+ }
+
+ .form-button:hover {
+  color: #0073b9;
+  border-color: currentColor;
+  background-color: white;
  }
