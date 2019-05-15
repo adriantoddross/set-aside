@@ -11,6 +11,12 @@
   /* show a hand cursor on hover; some argue that we
   should keep the default arrow cursor for buttons */
   cursor: pointer;
+    /* ... */
+  /* all browsers: remove the default outline since
+      we are rolling our own focus styles */
+      outline: none;
+  /* Firefox: removes the inner border shown on focus */
+  border: none;
  }
 
  .form-button {
