@@ -31,6 +31,7 @@
   /* invisible border (will be colored on hover/focus) */
   border: solid 2px transparent;
   border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08); 
 
   /* size comes from text & padding (no width/height) */
   padding: 0.5em 1em;
@@ -39,6 +40,9 @@
   color: #ffffff;
   background-color: #0073b9;
   font-weight: bold;
+  text-transform: uppercase;
+
+  
  }
 
  .form-button:active {
@@ -55,4 +59,7 @@
   color: #0073b9;
   border-color: currentColor;
   background-color: white;
+  transform: translateY(-0.15em);
+  transition: all .15s ease;
+  -webkit-transition: all .15s ease;
  }
