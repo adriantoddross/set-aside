@@ -14,7 +14,7 @@
     /* ... */
   /* all browsers: remove the default outline since
       we are rolling our own focus styles */
-      outline: none;
+  outline: none;
   /* Firefox: removes the inner border shown on focus */
   border: none;
  }
@@ -49,7 +49,14 @@
  }
 
  .form-button:disabled {
-  visibility: hidden;
+    color: white;
+    background-color: #e64b40;
+ }
+
+ .form-button[disabled]:hover, .form-button[disabled]:focus, .form-button[disabled]:active  {
+  color: #e64b40;
+  border-color: #e64b40;
+  background-color: white;
  }
 
  .form-button:hover, 
