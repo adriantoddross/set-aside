@@ -2,7 +2,7 @@
  * Reset button styles
  */
 
- button {
+.button-reset {
   padding: 0;
   border: none;
   font: inherit;

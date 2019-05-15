@@ -5,7 +5,7 @@ export default function Button(props) {
     return (
         <div className="form-submit">
             <button
-                className="form-button" 
+                className="form-button button-reset" 
                 style= {props.style} 
                 onClick= {props.action}
                 disabled= {!props.valid}
