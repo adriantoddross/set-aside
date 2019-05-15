@@ -4,7 +4,8 @@ import './Button.css';
 export default function Button(props) {
     return (
         <div className="form-submit">
-            <button 
+            <button
+                className="form-button" 
                 style= {props.style} 
                 onClick= {props.action}
                 disabled= {!props.valid}
