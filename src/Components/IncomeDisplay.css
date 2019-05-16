@@ -1,0 +1,12 @@
+.income-display h2 {
+  color: #0073b9;
+  font-weight: bold;
+  padding-top: .25rem;
+  text-transform: uppercase;
+}
+
+.income-display p {
+  display: inline-block;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: .25rem;
+}
