@@ -1,0 +1,26 @@
+@media (min-width: 320px) {
+  .footer {
+    border-top: 1px solid rgb(223, 223, 223);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer-img-container {
+    padding-top: 25px;
+  }
+  
+  footer p:nth-child(2) {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1440px) {}
+
