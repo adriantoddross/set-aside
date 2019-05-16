@@ -15,7 +15,7 @@
     font-weight: bold;
   }
 
-  .attribution:hover {
+  .attribution:hover, .attribution:focus {
     transform: translateY(1px);
     filter: saturate(150%);
   }
