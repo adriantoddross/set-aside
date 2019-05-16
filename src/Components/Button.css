@@ -51,6 +51,7 @@
  .form-button:disabled {
     color: white;
     background-color: #e64b40;
+    text-decoration: line-through;
  }
 
  .form-button[disabled]:hover, .form-button[disabled]:focus, .form-button[disabled]:active  {
