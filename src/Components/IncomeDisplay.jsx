@@ -1,4 +1,5 @@
 import React from 'react';
+import './IncomeDisplay.css';
 
 export default function incomeDisplay(props) {
      return (
