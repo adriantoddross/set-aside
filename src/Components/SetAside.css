@@ -10,6 +10,11 @@
     justify-content: center;
     padding: 1.5rem;
   }
+
+ .income-display:first-of-type {
+    color: #B30000;
+  }
+
 }
 
 @media (min-width: 768px) {}
