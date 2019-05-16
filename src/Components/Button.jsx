@@ -3,7 +3,7 @@ import './Button.css';
 
 export default function Button(props) {
     return (
-        <div className="form-submit">
+        <div className="form-group form-submit">
             <button
                 className="form-button button-reset" 
                 style= {props.style} 
