@@ -9,4 +9,5 @@
   display: inline-block;
   border-bottom: 1px solid darkgrey;
   padding-bottom: .25rem;
+  word-break: break-all;
 }
