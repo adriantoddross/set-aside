@@ -3,6 +3,7 @@ import Form from './FormContainer';
 import IncomeDisplay from './IncomeDisplay';
 import formatToDollar from '../Utils/FormatToDollar.js';
 import getPercentage from '../Utils/Percentage';
+import './SetAside.css';
 
 export default class SetAside extends Component {
     constructor(props) {
