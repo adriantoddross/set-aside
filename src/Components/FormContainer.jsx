@@ -56,8 +56,8 @@ export default class FormContainer extends Component {
         const taxOptions = this.state.taxOptions;
 
       return (
-        <div>
-          <form className="container" onSubmit={this.handleFormSubmit}>
+        <div className="form-container">
+          <form className="form-parent" onSubmit={this.handleFormSubmit}>
             <Input 
               type= "number"
               title= "Gross Income"
