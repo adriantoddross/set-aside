@@ -17,4 +17,5 @@
   font-size: calc(8px + 2vmin);
   flex-direction: column;
   justify-content: center;
+  padding: 1.5rem;
 }
