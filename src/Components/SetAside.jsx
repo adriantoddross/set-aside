@@ -39,14 +39,16 @@ export default class SetAside extends Component {
         return ( 
             <div className='App'>
                 <Form handleFormData={this.getFormData}/>
-                <IncomeDisplay
-                    amount={taxWithheld}
-                    description="Amount to withhold"
-                />
-                <IncomeDisplay
-                    amount={netIncome}
-                    description="Net income"
-                />
+                <div className="form-results">
+                    <IncomeDisplay
+                        amount={taxWithheld}
+                        description="Amount to withhold"
+                    />
+                    <IncomeDisplay
+                        amount={netIncome}
+                        description="Net income"
+                    />
+                    </div>
             </div>
         );
     }
