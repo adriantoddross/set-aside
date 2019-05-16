@@ -42,7 +42,7 @@ export default class SetAside extends Component {
                 <div className="form-results">
                     <IncomeDisplay
                         amount={taxWithheld}
-                        description="Amount to withhold"
+                        description="Taxable income"
                     />
                     <IncomeDisplay
                         amount={netIncome}
