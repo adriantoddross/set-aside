@@ -1,17 +1,25 @@
-.income-display {
-  padding: 0.75rem;
+@media (min-width: 320px) {
+  .income-display {
+    padding: 0.75rem;
+  }
+  
+  .income-display h2 {
+    color: #0073b9;
+    font-weight: bold;
+    padding-top: .25rem;
+    text-transform: uppercase;
+  }
+  
+  .income-display p {
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: .25rem;
+    word-break: break-all;
+  }
 }
 
-.income-display h2 {
-  color: #0073b9;
-  font-weight: bold;
-  padding-top: .25rem;
-  text-transform: uppercase;
-}
+@media (min-width: 768px) {}
 
-.income-display p {
-  display: inline-block;
-  border-bottom: 1px solid darkgrey;
-  padding-bottom: .25rem;
-  word-break: break-all;
-}
+@media (min-width: 1024px) {}
+
+@media (min-width: 1440px) {}
+
