@@ -4,6 +4,7 @@
   }
   
   .form-results {
+    background-image: linear-gradient(#ECE9E6, #ffffff);
     display: flex;
     align-items: center;
     flex-direction: row;
