@@ -67,7 +67,7 @@ export default class FormContainer extends Component {
               handleChange= {this.handleIncome}
             />  {/* Gross income */}
             <Select 
-              title= "Amount to Withhold"
+              title= "Percent to Withhold"
               name= "tax"
               options= {taxOptions}
               value={taxes}
