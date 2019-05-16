@@ -74,7 +74,7 @@ export default class FormContainer extends Component {
               placeholder= "Percentage to set aside"
               handleChange={this.handleTax}
             /> {/* Percentage to withhold */} 
-            <Button 
+            {/* <Button 
               title="Clear form"
               action={this.handleClearForm}
               valid="true"
