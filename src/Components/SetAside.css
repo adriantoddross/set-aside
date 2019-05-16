@@ -1,3 +1,11 @@
 .App {
   font-size: calc(8px + 2vmin);
 }
+
+.form-results {
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  justify-content: left;
+  padding: 1.5rem;
+}
