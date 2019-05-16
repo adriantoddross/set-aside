@@ -25,7 +25,11 @@
   }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .form-parent {
+    flex-grow: 0.25;
+  }
+}
 
 @media (min-width: 1024px) {}
 
