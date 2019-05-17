@@ -44,5 +44,11 @@
   }
 }
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+  .footer {
+    font-size: calc(2.5px + 2vmin);
+    flex-direction: row;
+    text-align: left;
+  }
+}
 
