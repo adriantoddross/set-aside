@@ -4,7 +4,6 @@ import IncomeDisplay from './IncomeDisplay';
 import formatToDollar from '../Utils/FormatToDollar.js';
 import getPercentage from '../Utils/Percentage';
 import './SetAside.css';
-import Footer from './Footer.jsx';
 
 export default class SetAside extends Component {
     constructor(props) {
@@ -50,7 +49,6 @@ export default class SetAside extends Component {
                         description="Net income"
                     />
                     </div>
-                    <Footer/>
             </div>
         );
     }
