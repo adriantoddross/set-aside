@@ -12,7 +12,7 @@ export default class FormContainer extends Component {
         super(props);
         this.state = {
             grossIncome: "",
-            tax: 40,
+            tax: 30,
             taxOptions: [30, 25]
         }
 
