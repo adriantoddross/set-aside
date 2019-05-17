@@ -33,7 +33,7 @@ export default class FormContainer extends Component {
     handleClearForm(e) {
       e.preventDefault();
       this.setState({
-        grossIncome: 0,
+        grossIncome: "",
         tax: 40,
       })
     }
@@ -58,32 +58,42 @@ export default class FormContainer extends Component {
       return (
         <div className="form-container">
           <form className="form-parent" onSubmit={this.handleFormSubmit}>
-            <Input 
-              type= "number"
-              title= "Gross Income"
-              name= "gross"
-              value= {grosspay}
-              placeholder= "Enter your gross income"
-              handleChange= {this.handleIncome}
-            />  {/* Gross income */}
-            <Select 
-              title= "Tax Rate"
-              name= "tax"
-              options= {taxOptions}
-              value={taxes}
-              placeholder= "Percentage to set aside"
-              handleChange={this.handleTax}
-            /> {/* Percentage to withhold */} 
-            {/* <Button 
-              title="Clear form"
-              action={this.handleClearForm}
-              valid="true"
-            /> { /*Clear form */ }
-            <Button 
-              title="Submit"
-              action={this.handleFormSubmit}
-              valid={(grosspay > 0 ? true : false)}
-            /> { /*Submit form*/ }
+            <ul>
+              <li>
+                <Input 
+                  type= "number"
+                  title= "Gross Income"
+                  name= "gross"
+                  value= {grosspay}
+                  placeholder= "Enter your gross income"
+                  handleChange= {this.handleIncome}
+                />  
+              </li>
+              <li>
+                <Select 
+                  title= "Tax Rate"
+                  name= "tax"
+                  options= {taxOptions}
+                  value={taxes}
+                  placeholder= "Percentage to set aside"
+                  handleChange={this.handleTax}
+                />
+              </li>
+              <li>
+                <Button 
+                  title="Clear form"
+                  action={this.handleClearForm}
+                  valid="true"
+                /> { /*Clear form */ }
+              </li>
+              <li>
+                <Button 
+                  title="Submit"
+                  action={this.handleFormSubmit}
+                  valid={(grosspay > 0 ? true : false)}
+                /> { /*Submit form*/ }
+              </li>
+            </ul> 
           </form>
         </div>
       );
