@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './FormContainer.css';
 
 import Select from './Select';
 import Button from './Button';
@@ -11,8 +12,8 @@ export default class FormContainer extends Component {
         super(props);
         this.state = {
             grossIncome: "",
-            tax: 40,
-            taxOptions: [40,35]
+            tax: 30,
+            taxOptions: [30, 25]
         }
 
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
@@ -32,7 +33,7 @@ export default class FormContainer extends Component {
     handleClearForm(e) {
       e.preventDefault();
       this.setState({
-        grossIncome: 0,
+        grossIncome: "",
         tax: 40,
       })
     }
@@ -55,34 +56,44 @@ export default class FormContainer extends Component {
         const taxOptions = this.state.taxOptions;
 
       return (
-        <div>
-          <form className="container" onSubmit={this.handleFormSubmit}>
-            <Input 
-              type= "number"
-              title= "Gross Income"
-              name= "gross"
-              value= {grosspay}
-              placeholder= "Enter your gross income"
-              handleChange= {this.handleIncome}
-            />  {/* Gross income */}
-            <Select 
-              title= "Amount to Withhold"
-              name= "tax"
-              options= {taxOptions}
-              value={taxes}
-              placeholder= "Percentage to set aside"
-              handleChange={this.handleTax}
-            /> {/* Percentage to withhold */} 
-            <Button 
-              title="Clear form"
-              action={this.handleClearForm}
-              valid="true"
-            /> { /*Clear form */ }
-            <Button 
-              title="Submit"
-              action={this.handleFormSubmit}
-              valid={(grosspay > 0 ? true : false)}
-            /> { /*Submit form*/ }
+        <div className="form-container">
+          <form className="form-parent" onSubmit={this.handleFormSubmit}>
+            <ul>
+              <li>
+                <Input 
+                  type= "number"
+                  title= "Gross Income"
+                  name= "gross"
+                  value= {grosspay}
+                  placeholder= "Enter your gross income"
+                  handleChange= {this.handleIncome}
+                />  
+              </li>
+              <li>
+                <Select 
+                  title= "Tax Rate"
+                  name= "tax"
+                  options= {taxOptions}
+                  value={taxes}
+                  placeholder= "Percentage to set aside"
+                  handleChange={this.handleTax}
+                />
+              </li>
+              {/* <li>
+                <Button 
+                  title="Clear form"
+                  action={this.handleClearForm}
+                  valid="true"
+                />
+              </li> */}
+              <li>
+                <Button 
+                  title="Submit"
+                  action={this.handleFormSubmit}
+                  valid={(grosspay > 0 ? true : false)}
+                /> { /*Submit form*/ }
+              </li>
+            </ul> 
           </form>
         </div>
       );

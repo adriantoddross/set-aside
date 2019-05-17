@@ -1,0 +1,21 @@
+.form-label {
+  color: black;
+  display: block;
+  padding-bottom: .25rem;
+}
+
+.form-select {
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  color: black;
+  padding: 8px 16px;
+}
+
+.form-select:focus {
+  border: 2px solid #0073b9;  
+}
+
+option.form-options {
+  background-color: #0073b9;
+  color: white;
+}

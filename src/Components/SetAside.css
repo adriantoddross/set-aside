@@ -1,0 +1,26 @@
+@media (min-width: 320px) {
+  .App {
+    font-size: calc(8px + 2vmin);
+  }
+  
+  .form-results {
+    background-image: linear-gradient(#ECE9E6, #ffffff);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+ .income-display:first-of-type {
+    color: #B30000;
+  }
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1440px) {}
+

@@ -3,6 +3,7 @@ import Form from './FormContainer';
 import IncomeDisplay from './IncomeDisplay';
 import formatToDollar from '../Utils/FormatToDollar.js';
 import getPercentage from '../Utils/Percentage';
+import './SetAside.css';
 
 export default class SetAside extends Component {
     constructor(props) {
@@ -38,14 +39,16 @@ export default class SetAside extends Component {
         return ( 
             <div className='App'>
                 <Form handleFormData={this.getFormData}/>
-                <IncomeDisplay
-                    amount={taxWithheld}
-                    description="Amount to withhold"
-                />
-                <IncomeDisplay
-                    amount={netIncome}
-                    description="Net income"
-                />
+                <div className="form-results">
+                    <IncomeDisplay
+                        amount={taxWithheld}
+                        description="Taxable income"
+                    />
+                    <IncomeDisplay
+                        amount={netIncome}
+                        description="Net income"
+                    />
+                    </div>
             </div>
         );
     }
