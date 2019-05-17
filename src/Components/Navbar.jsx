@@ -8,7 +8,7 @@ export default function Navbar() {
         <p>Easily determine your self-employed taxes.</p>
       </div>
       <ul>
-        <li><a className='attribution' href="https://github.com/adriantoddross/set-aside" target="_blank" rel="noopener noreferrer">Learn More</a></li>
+        <li><a className='attribution' href="https://www.daveramsey.com/blog/file-taxes-for-freelance-work" target="_blank" rel="noopener noreferrer">Learn More</a></li>
         <li><a className='attribution' href="https://github.com/adriantoddross/set-aside" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
       </ul>
     </div>
