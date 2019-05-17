@@ -41,7 +41,13 @@
   }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  .form-parent li {
+    padding: 0.15em 0em;
+  }
+}
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+
+}
 
