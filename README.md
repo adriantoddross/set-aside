@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Set Aside
+## Easily determine your self-employed taxes.
 
-## Available Scripts
+Set Aside was inspired by Dave Ramsey's advice to put aside 25% to 30% of your freelance earnings to account for self-employed taxes and to be prepared ahead of time if you end up owing money to the IRS.
 
-In the project directory, you can run:
+> Remember, the self-employment tax is in addition to your regular income tax rate. That’s why Dave recommends you save as you go by setting aside around 25–30% of every freelance check you receive in a separate savings account to cover your income and self-employment taxes so you don’t come up short at tax time.
 
-### `npm start`
+**- Dave Ramsey, ["Freelance Tax 101"](https://www.daveramsey.com/blog/file-taxes-for-freelance-work)**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### What does the app do?
+It's a simple calculator to determine taxable income. You enter your gross income and select a tax rate, then your taxable income and net income are displayed below.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Why did you make this?
+Typically, after I send the final invoice for a project and actually get the money, I google 30% of whatever my gross income was, then subtracted the taxable income from my gross income with a calculator on my phone. This became pretty inconvenient since I'm immediately transferring funds from the payment into a savings account solely for my self-employed taxes, so I created Set Aside to clearly and concisely display the information I cared about: taxable income and net income.
 
-### `npm test`
+### Why are the only options 25% and 30%?
+These are the amounts Dave Ramsey recommends to set aside, so they are the only options offered. I follow his teachings strictly (almost... religiously, one could say), so I won't be offering any other percentages or updating the app to include a number input for custom percentages.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### What was this made with?
+This app was created with Create-React-App.
