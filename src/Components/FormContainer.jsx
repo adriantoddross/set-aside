@@ -79,13 +79,13 @@ export default class FormContainer extends Component {
                   handleChange={this.handleTax}
                 />
               </li>
-              <li>
+              {/* <li>
                 <Button 
                   title="Clear form"
                   action={this.handleClearForm}
                   valid="true"
-                /> { /*Clear form */ }
-              </li>
+                />
+              </li> */}
               <li>
                 <Button 
                   title="Submit"
