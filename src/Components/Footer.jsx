@@ -7,7 +7,7 @@ export default function Footer(props) {
       <footer id='footer' className='footer' role='contentinfo'>
           {/* <img className='footer-img' src="https://res.cloudinary.com/adriantoddross/image/upload/v1527785141/adrian-ross.png" alt="Adrian Ross"/> */}
         <p>
-          Designed and developed by <a className='attribution' href="https://www.adriantoddross.com" target="_blank" rel="noopener noreferrer">Adrian Ross</a>, inspired by <a className='attribution' href="https://www.daveramsey.com/blog/file-taxes-for-freelance-work" target="_blank" rel="noopener noreferrer">Dave Ramsey</a>. Hosted on Netlify.
+          Designed and developed by <a className='attribution' href="https://www.adriantoddross.com" target="_blank" rel="noopener noreferrer">Adrian Ross</a>, inspired by <a className='attribution' href="https://www.daveramsey.com/" target="_blank" rel="noopener noreferrer">Dave Ramsey</a>. Hosted on Netlify.
         </p>
         <p>Code is licensed under MIT and available on Github. All images and graphics are licensed under CC BY-SA. © 2019 Adrian Ross</p>
       </footer>
